@@ -6,7 +6,7 @@ def winner(tableau, player):
 			return True
 	#verifier les colonnes
 	for i in range(3):
-		counter = 0
+		counter = 1
 		line = 1
 		while line < 3:
 			if tableau[i][line] == tableau[i][0] != " ":
