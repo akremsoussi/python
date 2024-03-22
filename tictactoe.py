@@ -43,7 +43,7 @@ for i in range(9):
 	print(f"c'est le role de {player}")
 	while True:
 		case = (int(input("c'est quoi la ligne(0,1,2) :")),int(input("c'est quoi la colonne(0,1,2) :")))
-		if case[0]  not in(0,1,2) or case[1] not in(0,1,2):
+		if (case[0]  != 0 and case[0]  != 1 and case[0]  != 2 ) or (case[1] != 0 and case[1]  != 1 and case[1]  != 2):
 			print("invalid range")
 		else:
 			if tableau[case[0]][case[1]] == " ":
